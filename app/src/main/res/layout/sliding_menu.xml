@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical">
+
+    <!--<com.jeremyfeinstein.slidingmenu.lib.SlidingMenu-->
+    <!--android:id="@+id/sliding_menu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:src="@mipmap/head" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3013216013"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TableRow
+            android:id="@+id/count_manage"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/setting" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="账号管理"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/feedback"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/feedback" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="吐槽点我"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/update"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/update" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="更新点我"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/aboutme"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/about" />
+
+            <TextView
+                style="@style/textstyle"
+                android:text="应用信息"></TextView>
+        </TableRow>
+    </TableLayout>
+
+    <!--</com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>-->
+</LinearLayout>

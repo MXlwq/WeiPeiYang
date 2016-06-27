@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="liwenquan.top.weipeiyang.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imagebutton_table"
+            style="@style/imagebutton_style"
+            android:background="@drawable/c1"
+            android:src="@mipmap/table" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_mark"
+            style="@style/imagebutton_style"
+            android:background="@drawable/c2"
+            android:src="@mipmap/rise" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_more"
+            style="@style/imagebutton_style"
+            android:background="@drawable/c3" />
+    </LinearLayout>
+</RelativeLayout>

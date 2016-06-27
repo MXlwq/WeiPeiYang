@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F5"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="liwenquan.top.weipeiyang.FeedBackActivity">
+
+
+    <TextView
+        style="@style/margin_style"
+        android:layout_marginBottom="8dp"
+        android:text="您的邮箱"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        style="@style/margin_style"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_style"
+        android:gravity="top"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="12dp" />
+
+    <TextView
+        style="@style/margin_style"
+        android:layout_marginBottom="8dp"
+        android:text="吐槽内容"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edittext_style"
+        android:gravity="top"
+        android:maxLines="8"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/push_bugs"
+        style="@style/margin_style"
+        android:background="#015488"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

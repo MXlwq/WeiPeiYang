@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/school"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="liwenquan.top.weipeiyang.LoginActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TableRow
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:alpha="0.85"
+                android:background="@drawable/leftcorner"
+                android:padding="14dp"
+                android:src="@drawable/count" />
+
+            <EditText
+                android:id="@+id/count"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@drawable/rightcorner"
+                android:hint="请输入学号"
+                android:inputType="number"
+                android:textColorHint="#858585" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:alpha="0.85"
+                android:background="@drawable/leftcorner"
+
+                android:padding="14dp"
+                android:src="@drawable/password" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:inputType="textPassword"
+                android:background="@drawable/rightcorner"
+                android:hint="请输入密码"
+                android:textColorHint="#858585" />
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            android:id="@+id/imageview_securitycode"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/securitycode"
+            android:layout_height="48dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:alpha="0.6"
+            android:inputType="textPassword"
+            android:background="@drawable/rightcorner"
+            android:hint="验证码"
+            android:textColorHint="#858585" />
+    </LinearLayout>
+    <Button
+        style="@style/margin_style"
+        android:layout_marginTop="16dp"
+        android:background="#015488"
+        android:id="@+id/login_button"
+        android:text="登陆"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+</LinearLayout>

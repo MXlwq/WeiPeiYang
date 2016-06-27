@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">喂！北洋</string>
+    <string name="version">当前版本是%s\n已是最新版本</string>
+</resources>

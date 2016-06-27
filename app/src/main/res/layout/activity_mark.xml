@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="liwenquan.top.weipeiyang.MarkActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FAFAFA">
+
+        <ImageView
+            android:id="@+id/image_chart"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#EEEEEE" />
+
+        <TextView
+            android:id="@+id/textview_Mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_chart"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="加权:" />
+
+        <TextView
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_chart"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/textview_Mark"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/textview_GPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_chart"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/mark"
+            android:text=" 绩点:" />
+
+        <TextView
+            android:id="@+id/GPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_chart"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/textview_GPA"
+            android:text="5.0" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title"
+        android:background="#FAFAFA"
+        android:padding="8dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <TableRow>
+
+                <Button
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="成绩降序" />
+
+                <Button
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="学分降序" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="课程名称" />
+
+                <Button
+                    android:layout_height="30dp"
+                    android:text="学分" />
+
+                <Button
+                    android:layout_height="30dp"
+                    android:text="成绩" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
